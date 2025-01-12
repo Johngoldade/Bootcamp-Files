@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS CheatSheet</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>CSS Snippet Cheatsheet</h1>
+        <p>
+            Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Flexbox Row</h2>
+            <p>Use these three properties to create a Flexbox row layout.</p>
+            <ul>
+                <li>.row {</li>
+                <li id="indent">display: flex;</li>
+                <li id="indent">flex-direction: row;</li>
+                <li id="indent">flex-wrap: wrap;</li>
+                <li>}</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Flexbox Column</h2>
+            <p>Use this to create a Flexbox column layout.</p>
+            <ul>
+                <li>.column {</li>
+                <li id="indent">display: flex;</li>
+                <li id="indent">flex-direction: column;</li>
+                <li>}</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>CSS Grid Layout</h2>
+            <p>Build a 12-column layout using CSS Grid.</p>
+            <ul>
+                <li>.grid {</li>
+                <li id="indent">display: grid;</li>
+                <li id="indent">width: 100%;</li>
+                <li id="indent">grid-template-columns:</li>
+                <li id="indent">repeat(12, 1fr);</li>
+                <li>}</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Linear Gradients</h2>
+            <p>This will create a background linear gradient from top to bottom.</p>
+            <ul>
+                <li>.linear-gradient-background {</li>
+                <li id="indent">background-image:linear-</li>
+                <li id="indent">gradient(</li>
+                <li id="indent">rgba(232, 102, 236, 0.3) 0%,</li>
+                <li id="indent">rgba(232, 102, 236, 0.6) 100%</li>
+                <li id="indent">);</li>
+                <li>}</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Box Transition Glow</h2>
+            <p>Use transition and box shadows to glow on hover.</p>
+            <ul>
+                <li>.code-card .card-header {</li>
+                <li id="indent">border-radius: 8px;</li>
+                <li id="indent">transition: all 0.5s ease-in-</li>
+                <li id="indent">out;</li>
+                <li>}</li>
+                <li></li>
+                <li>.code-card:hover,</li>
+                <li>.code-card:hover .card-header {</li>
+                <li id="indent">box-shadow: inset 0px 0px 8px</li>
+                <li id="indent">rgba(232, 102, 236, 1), 0 8 15px</li>
+                <li id="indent">rgba(232, 102, 236, 1);</li>
+                <li>}</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Overlay Card with Title</h2>
+            <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+            <ul>
+                <li>.card-header {</li>
+                <li id="indent">postion: relative;</li>
+                <li id="indent">margin-top: -20px;</li>
+                <li>}</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Made with CSS!</h3>
+    </footer> 
+</body>
+</html>
